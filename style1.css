@@ -1,0 +1,155 @@
+body{
+  background-color: #4B3869;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4B3869;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  /* margin: 10px; */
+  padding: 20px;
+  /* font-size: 30px; */
+  /* min-width: 30%; */
+}
+
+.left{
+  width: 300px;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  padding-left: 30%;
+  padding-right: 30%;
+  max-width: 200px;
+}
+
+table td label{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+td input{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+}
+
+input:focus{
+  background-color: #664E88;
+  color: white;
+}
+
+td textarea{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+}
+
+textarea:focus{
+  background-color: #664E88;
+  color: white;
+}
+
+#name, #birthday, #address, #summary, #birthdate{
+  width: 100%;
+}
+
+.btn-submit{
+  width: 80px;
+  padding : 5px 10px;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-submit:hover{
+  background-color: #664E88;
+  color: white;
+}
+
+.right{
+  width: 400px;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 13px 10px -13px #000, 0px 7px 10px rgba(0,0,0,.1);
+  margin-left: 50px;
+  height: 550px;
+  transition: box-shadow 1s;
+  /* height: 90%; */
+}
+
+.right:hover{
+    box-shadow: 0px 13px 10px -13px #000, 5px 7px 10px rgba(4, 4, 4, 0.77);
+}
+
+.right td{
+  border-bottom: 1px solid gray;
+}
+
+.right table{
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.img-output{
+  /* background-color: yellow; */
+  height: 10%;
+  padding-left: 43%;
+  padding-right: 40%;
+}
+
+.img-output img{
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.name-output{
+  width: 100%;
+  text-align: center;
+  /* background-color: red; */
+  font-size: 2.2vw;
+}
+
+.right table th img{
+  padding: 10px;
+  width: auto;
+  height: auto;
+  max-height: 25px;
+  margin-right: 15px;
+  background-color: #8236CB;
+  border-radius: 20px;
+  box-shadow: rgba(255,0,255,0.3) 4px 3px 1px;
+}
+
+#img-user{
+  background: none;
+  box-shadow:none;
+}
+
+/* table td{
+font-size: 0.5em;
+} */
+
+.summary-output{
+  margin-top: 10px;
+  height: 20%;
+  font-size: 15px;
+  text-align: justify;
+  padding : 3px;
+  border-style: groove;
+  overflow: scroll;
+}
+
+
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 600px) {
+  .left, .right {
+    width: 30%
+  }
+}

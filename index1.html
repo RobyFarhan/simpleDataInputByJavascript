@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Task 3</title>
+</head>
+
+<body>
+  <div class="flex-container">
+
+<!--  _____________AWAL CONTAINER LEFT _____________ -->
+    <div class="left">
+      <h1> Data Input </h1>
+        <form id="form" method="post">
+          <table>
+            <tr>
+              <td>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="name"</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="date">Birth Date</label><br>
+                  <input type="date" id="birthdate" </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label for="address">Address</label><br>
+                    <textarea name="address" id="address" rows="3" cols="30" placeholder="address"></textarea></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="gender">Gender</label><br>
+                      <input type="radio" id="male" name="gender" value="male"> Male </input>
+                      <input type="radio" id="female" name="gender" value="female"> Female </input>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="religion">Religion</label><br>
+                      <input type="radio" id="islam" name="religion" value="islam"> Islam </input>
+                      <input type="radio" id="kristen"  name="religion" value="kristen"> Kristen </input>
+                      <input type="radio" id="hindu"  name="religion" value="hindu"> Hindu </input>
+                      <input type="radio" id="budha"  name="religion" value="budha"> Budha</input>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="summary">Summary</label><br>
+                      <textarea id="summary" name="summary" rows="3" cols="30" placeholder="years of programming experiences"></textarea></td>
+                    </tr>
+                  </table> <br>
+                </form>
+                <button class="btn-submit" type="submit" name="button" onClick="printData();"> Submit</button>
+            </div>
+
+            <!-- - _____________AKHIR CONTAINER LEFT  _____________-->
+
+
+            <!--  _____________AWAL CONTAINER RIGHT _____________ -->
+            <div class="right">
+              <div class="img-output">
+                <img id="img-user" src="user2.png">
+              </div>
+
+              <div class="name-output">
+                <p id="printName"></p>
+              </div>
+
+              <table>
+                <tr>
+                  <th> <img src="birthcake.png"></th>
+                  <td id="printBirthDate"></td>
+                </tr>
+                <tr>
+                    <th> <img src="home.png"></th>
+                  <td id="printAddress"></td>
+                </tr>
+                <tr>
+                    <th> <img src="sex.png"></th>
+                  <td id="printGender"></td>
+                </tr>
+                <tr>
+                    <th> <img src="belief.png"> </th>
+                  <td id="printReligion"></td>
+                </tr>
+              </table>
+
+              <div class="summary-output">
+                <p id="printSummary"></p>
+              </div>
+              </div>
+              <!--  _____________AKHIR CONTAINER RIGHT _____________ -->
+
+            </div>
+          </body>
+
+            <script src="script.js"></script>
+            </html>
